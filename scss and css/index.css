@@ -13,3 +13,7 @@ body {
     font-style: normal;
 }
 
+a {
+    display: inline-block;
+    width: max-content;
+}

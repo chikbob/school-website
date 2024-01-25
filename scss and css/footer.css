@@ -21,6 +21,10 @@
 .footer__links {
   margin: 0 4rem 0 0;
 }
+.footer__links-container {
+  display: flex;
+  flex-direction: column;
+}
 .footer__links-text {
   color: #4F4F4F;
   font-size: 0.8rem;
@@ -53,6 +57,7 @@
   font-size: 0.7rem;
   font-weight: 400;
   text-decoration-line: underline;
+  width: fit-content;
   margin: 1rem 0 0 0;
 }
 .footer__contacts-text_mini a:visited {
@@ -123,14 +128,15 @@
 }
 .footer__info {
   display: flex;
-  margin: 15px auto 27px;
+  margin: 0.5rem auto 27px;
   justify-content: space-between;
   align-items: center;
   width: 80%;
 }
 .footer__info-logo_img {
-  width: 14.1rem;
-  height: 2.3rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 2rem 0 2rem;
 }
 .footer__info-logo_img:hover {
   cursor: pointer;
