@@ -29,6 +29,14 @@ import {cnHeader} from "./header.const.js";
 
         margin: 0 0 0 6rem;
 
+        &:hover {
+            color: #c3fad5;
+
+            transition: all .3s ease-out;
+
+            cursor: pointer;
+        }
+
         &:visited {
             color: #000;
             text-decoration: none;
@@ -36,10 +44,14 @@ import {cnHeader} from "./header.const.js";
             &:hover {
                 color: #c3fad5;
 
-                transition: all .1s linear;
+                transition: all .3s ease-out;
 
                 cursor: pointer;
             }
+        }
+
+        &:last-child {
+            margin: 0 4rem 0 6rem;
         }
     }
 }
