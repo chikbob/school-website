@@ -14,6 +14,6 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('index');
-});
+Route::get('/', fn() => Inertia::render('index'));
+
+Route::get('/contacts', fn() => Inertia::render('contacts/contacts'));

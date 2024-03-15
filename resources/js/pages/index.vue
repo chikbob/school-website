@@ -1,5 +1,9 @@
 <template>
-    <PageLayout></PageLayout>
+    <PageLayout>
+        <div>
+            Main
+        </div>
+    </PageLayout>
 </template>
 
 <script setup lang="ts">
