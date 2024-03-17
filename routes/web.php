@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -17,3 +18,5 @@ use Inertia\Inertia;
 Route::get('/', fn() => Inertia::render('index'));
 
 Route::get('/contacts', fn() => Inertia::render('contacts/contacts'));
+
+Route::get('/news', PostController::class);
