@@ -20,3 +20,5 @@ Route::get('/', fn() => Inertia::render('index'));
 Route::get('/contacts', fn() => Inertia::render('contacts/contacts'));
 
 Route::get('/news', PostController::class);
+
+

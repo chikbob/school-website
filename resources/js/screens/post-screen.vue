@@ -1,7 +1,7 @@
 <template>
     <PageLayout>
         <div v-for="post in model.post" :key="model.post.id">
-            {{post.label}}
+            {{post.poster}}
         </div>
     </PageLayout>
 </template>

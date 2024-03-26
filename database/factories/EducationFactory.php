@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Education>
  */
-class PostFactory extends Factory
+class EducationFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,9 +18,9 @@ class PostFactory extends Factory
     {
         return [
             'label' => $this->faker->name,
-            'time' => $this->faker->dateTime,
-            'description' => $this->faker->text,
-            'poster' => $this->faker->imageUrl
+            'classes' => $this->faker->name,
+            'price' => $this->faker->numberBetween(5000, 15000),
+            'description_price' => $this->faker->numberBetween(16000, 50000),
         ];
     }
 }

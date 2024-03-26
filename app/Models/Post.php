@@ -12,6 +12,7 @@ class Post extends Model
     protected $fillable = [
         "label",
         "time",
-        "description"
+        "description",
+        "poster"
     ];
 }

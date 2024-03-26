@@ -3,13 +3,13 @@ import {useStore} from "pinia-class-store";
 
 
 class PostModel extends BaseModel {
-    init(post) {
-        this.post = post;
-    }
-
     constructor() {
         super();
         this.post = undefined;
+    }
+
+    init(post) {
+        this.post = post;
     }
 }
 

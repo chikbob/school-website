@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Education;
+use App\Models\Info;
 use App\Models\Post;
 use Illuminate\Database\Seeder;
 
@@ -21,5 +23,6 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Post::factory(10)->create();
+        Info::factory(10)->create();
     }
 }
